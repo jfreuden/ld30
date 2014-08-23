@@ -37,7 +37,7 @@ public class PlayerControl : MonoBehaviour
 				if (Input.GetKeyDown (KeyCode.Space) & (rigidbody2D.velocity.y == 0)) {
 						rigidbody2D.AddForce (Vector2.up * 6, ForceMode2D.Impulse);
 				}
-		transform.rotation.SetFromToRotation(transform.position,new Vector3(5,5,0));
+
 
 		}
 }
