@@ -18,8 +18,5 @@ public class GunPoint : MonoBehaviour {
 		transform.rotation = rotateToPlayer;
 
 
-		//transform.RotateAround(transform.position,Vector3.back,Quaternion.FromToRotation(this.transform.position, player.transform.position).);
-		//transform.rotation = Quaternion.AngleAxis(2f,Vector3.up); //Quaternion.FromToRotation(this.transform.position, player.transform.position);
-		//transform.LookAt(GameObject.Find("Player").transform,Vector3.up);
 	}
 }

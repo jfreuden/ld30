@@ -84,7 +84,7 @@ class ITFile:
         )
         self.gvol = 128
         self.mvol = 48
-        self.tempo = random.randint(90,160)
+        self.tempo = 60 #random.randint(90,160) #CHANGED
         self.speed = 3
         self.pitchwheel = 0
         self.pansep = 128
@@ -938,10 +938,10 @@ SMP_SNARE = itf.smp_add(Sample_NoiseHit(name = "NH Snare", decay = 0.12, filtl =
 
 print "Generating patterns"
 strat = Strategy_Main(random.randint(50,50+12-1)+12, Key_Minor if random.random() < 0.6 else Key_Major, 128, 32)
-strat.gen_add(Generator_Drums(s_kick = SMP_KICK, s_snare = SMP_SNARE, s_hhc = SMP_HHC, s_hho = SMP_HHO))
+#strat.gen_add(Generator_Drums(s_kick = SMP_KICK, s_snare = SMP_SNARE, s_hhc = SMP_HHC, s_hho = SMP_HHO))
 strat.gen_add(Generator_AmbientMelody(smp = SMP_GUITAR))
 strat.gen_add(Generator_Bass(smp = SMP_BASS))
-for i in xrange(30):
+for i in xrange(18): #CHANGED
     itf.ord_add(itf.pat_add(strat.get_pattern()))
 
 print "Saving"

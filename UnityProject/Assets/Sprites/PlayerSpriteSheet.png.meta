@@ -3,10 +3,14 @@ guid: b9f624b398bf44f4896687989e2f6681
 TextureImporter:
   fileIDToRecycleName:
     21300000: PlayerSpriteSheet
-    21300002: PlayerSpriteSheet_0
-    21300004: PlayerSpriteSheet_1
-    21300006: PlayerSpriteSheet_2
-    21300008: PlayerSpriteSheet_3
+    21300002: Running0
+    21300004: Jump0
+    21300006: Running1
+    21300008: Running2
+    21300010: Running3
+    21300012: Fall0
+    21300014: Running4
+    21300016: Running5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,7 +52,67 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: PlayerSpriteSheet_0
+    - name: Running0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jump0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fall0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running4
       rect:
         serializedVersion: 2
         x: 0
@@ -56,19 +120,9 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PlayerSpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 24
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PlayerSpriteSheet_2
+    - name: Running5
       rect:
         serializedVersion: 2
         x: 0
@@ -76,17 +130,7 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PlayerSpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 24
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
