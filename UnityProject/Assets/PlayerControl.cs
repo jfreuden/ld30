@@ -26,5 +26,10 @@ public class PlayerControl : MonoBehaviour
 			this.transform.localScale = new Vector3 (1, 1, 1);
 		}
 		this.transform.Translate (horizont * moveSpeed * Vector2.right * Time.deltaTime);
+
+		if (Input.GetKeyDown(KeyCode.Space) & rigidbody2D.velocity.y == 0) {
+			rigidbody2D.AddForce(Vector2.up * 6,ForceMode2D.Impulse);
+		}
+
 	}
 }
