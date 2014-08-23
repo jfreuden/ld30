@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerControl : MonoBehaviour
 {
-
+		public bool running = false;
 		public int moveSpeed = 4;
 		bool mirror;
 		// Use this for initialization
@@ -15,7 +15,13 @@ public class PlayerControl : MonoBehaviour
 		void Update ()
 		{
 				float horizont = Input.GetAxis ("Horizontal");
-				
+		Animator stateAnim = this.GetComponent<Animator> ();
+				if (horizont == 0) {
+			stateAnim.SetBool("running",false);
+				} else {
+						running = true;
+						stateAnim.SetBool ("running",true);
+				}
 				if (horizont < 0) {
 						mirror = true;
 				} else if (horizont > 0) {
