@@ -22,11 +22,11 @@
   </tile>
  </tileset>
  <tileset firstgid="17" name="Wall" tilewidth="32" tileheight="64">
-  <image source="Wall.png" width="32" height="64"/>
+  <image source="WallTileset.png" width="128" height="64"/>
  </tileset>
  <layer name="Wall" width="80" height="16">
   <data encoding="base64" compression="zlib">
-   eJzt0MEJADAIA0BX6P7LdgWhUlHuPnmGJAIAAMg6w/NVd3+37J6t+6v5CeCPC8sMAqk=
+   eJzt0MEJACAMBMHUoPZfqxWIQkSIzHzue2wEAABwqhfdETnt0o/qdj1XnbL9f6UTwBsTWQADIQ==
   </data>
  </layer>
  <layer name="Terrain Tiles" width="80" height="16">
