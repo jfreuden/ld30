@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-up" width="80" height="16" tilewidth="16" tileheight="16">
+ <properties>
+  <property name="unity:scale" value=".0625"/>
+ </properties>
+ <tileset firstgid="1" name="Tileset" tilewidth="16" tileheight="16">
+  <image source="Tileset.png" width="64" height="64"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="1">
+   <objectgroup draworder="index">
+    <object x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="3">
+   <objectgroup draworder="index">
+    <object x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="17" name="Wall" tilewidth="32" tileheight="64">
+  <image source="Wall.png" width="32" height="64"/>
+ </tileset>
+ <layer name="Wall" width="80" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt0MEJADAIA0BX6P7LdgWhUlHuPnmGJAIAAMg6w/NVd3+37J6t+6v5CeCPC8sMAqk=
+  </data>
+ </layer>
+ <layer name="Terrain Tiles" width="80" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt0EsKACAIAFH73P/MrdqWIhrGPJitpSIAAAAAkKMZ64esszQzb3l43t3N4mlvGrX7KJ72pj/unnnT138iimgBnDoFSw==
+  </data>
+ </layer>
+</map>
