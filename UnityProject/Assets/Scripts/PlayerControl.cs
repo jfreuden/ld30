@@ -5,7 +5,7 @@ public class PlayerControl : MonoBehaviour
 {
 		public bool running = false;
 		public int moveSpeed = 4;
-		bool mirror;
+		public bool mirror;
 		// Use this for initialization
 		void Start ()
 		{

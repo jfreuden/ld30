@@ -3,8 +3,8 @@ guid: 22c3fd530c260ac439291fe21327e590
 TextureImporter:
   fileIDToRecycleName:
     21300000: WeaponsSpritesheet
-    21300002: WeaponsSpritesheet_0
-    21300004: WeaponsSpritesheet_1
+    21300002: Rifle
+    21300004: Sidearm
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,17 +46,17 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: WeaponsSpritesheet_0
+    - name: Rifle
       rect:
         serializedVersion: 2
         x: 0
         y: 8
         width: 16
         height: 8
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .375, y: .375}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WeaponsSpritesheet_1
+    - name: Sidearm
       rect:
         serializedVersion: 2
         x: 0
