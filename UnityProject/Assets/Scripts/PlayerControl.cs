@@ -4,8 +4,15 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour
 {
 		public bool running = false;
-		public int moveSpeed = 16;
+		int moveSpeed = 16;
 		public bool mirror;
+		public AudioClip jumpSound1;
+		public AudioClip jumpSound2;
+		public AudioClip jumpSound3;
+		public AudioClip run1;
+		public AudioClip run2;
+		public AudioClip run3;
+		public AudioClip run4;
 		// Use this for initialization
 		void Start ()
 		{
@@ -21,6 +28,20 @@ public class PlayerControl : MonoBehaviour
 				} else {
 						running = true;
 						stateAnim.SetBool ("running", true);
+						switch (Random.Range (0, 3)) {
+						case 0:
+								audio.PlayOneShot (run1);
+								break;
+						case 1:
+								audio.PlayOneShot (run2);
+								break;
+						case 2:
+								audio.PlayOneShot (run3);
+								break;
+						case 3:
+								audio.PlayOneShot (run4);
+								break;
+						}
 				}
 				if (horizont < 0) {
 						mirror = true;
@@ -42,18 +63,18 @@ public class PlayerControl : MonoBehaviour
 						this.transform.localScale = new Vector3 (1, 1, 1);
 				}
 				this.transform.Translate (horizont * moveSpeed * Vector2.right * Time.deltaTime);
-		
+	
 				//clamp location to map bounds (TODO: figure out what makes this screw up so often)
 				CameraControl cameraScript = ScriptableObject.FindObjectOfType<CameraControl> ();
-				
+			
 				float clampedX = Mathf.Clamp (transform.position.x, cameraScript.levelBounds.min.x, cameraScript.levelBounds.max.x);
 				transform.position = new Vector3 (clampedX, transform.position.y, transform.position.z);
-				
+			
 				if ((rigidbody2D.velocity.y < 0.1f) & (rigidbody2D.velocity.y > -0.1f)) { //If not jumping (or otherwise moving up/down)
 						stateAnim.SetBool ("jumping", false);
 						stateAnim.SetBool ("falling", false);
 						if (Input.GetKeyDown (KeyCode.Space)) {
-								rigidbody2D.AddForce (Vector2.up * 6, ForceMode2D.Impulse);
+								rigidbody2D.AddForce (Vector2.up * 7, ForceMode2D.Impulse);
 						}
 				} else if (rigidbody2D.velocity.y > 0) {
 						stateAnim.SetBool ("jumping", true);
