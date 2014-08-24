@@ -28,6 +28,17 @@ public class PlayerControl : MonoBehaviour
 				} else if (horizont > 0) {
 						mirror = false;
 				}
+				//determine direction of mouse pointing
+		
+		
+				Vector3 mousePos = Camera.main.ScreenPointToRay (Input.mousePosition).origin;
+				Vector3 relMouse = mousePos - transform.position;
+				Vector3 relMouseNorm = relMouse.normalized;
+				if (relMouseNorm .x > 0) {
+						mirror = false;
+				} else {
+						mirror = true;
+				}
 				if (mirror) {
 						this.transform.localScale = new Vector3 (-1, 1, 1);
 				} else {
@@ -48,6 +59,7 @@ public class PlayerControl : MonoBehaviour
 						stateAnim.SetBool ("falling", true);
 						stateAnim.SetBool ("jumping", false);
 				}
+				
 				
 				
 
