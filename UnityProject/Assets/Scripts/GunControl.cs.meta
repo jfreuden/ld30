@@ -2,7 +2,9 @@ fileFormatVersion: 2
 guid: 7f63e46f59a442d4da9c43b884f3c38a
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - normSprite: {fileID: 21300002, guid: 22c3fd530c260ac439291fe21327e590, type: 3}
+  - fireSprite: {fileID: 21300006, guid: 22c3fd530c260ac439291fe21327e590, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

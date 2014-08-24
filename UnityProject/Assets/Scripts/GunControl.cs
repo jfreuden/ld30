@@ -3,6 +3,10 @@ using System.Collections;
 
 public class GunControl : MonoBehaviour
 {
+    public Sprite normSprite;
+    public Sprite fireSprite;
+    public AudioClip Shoot1;
+    public AudioClip Shoot2;
     void Update()
     {
         PlayerControl playerScript = ScriptableObject.FindObjectOfType<PlayerControl>();
@@ -22,17 +26,37 @@ public class GunControl : MonoBehaviour
         rotateToMouse = Quaternion.FromToRotation(Vector3.right, relMouseNorm);
         transform.rotation = rotateToMouse;
 
+        GetComponent<SpriteRenderer>().sprite = normSprite;
+
         if (Input.GetMouseButtonDown(0)) //Shoot
         {
+            GetComponent<SpriteRenderer>().sprite = fireSprite;
 
+            switch (Random.Range(0, 1))
+            {
+                case 0:
+                    audio.clip = Shoot1;
+                    audio.Play();
+                    break;
+                case 1:
+                    audio.clip = Shoot2;
+                    audio.Play();
+                    break;
+            }
+
+            new WaitForSeconds(0.25f);
             Vector3 dir = relMouseNorm;
-            Ray2D hitScan = new Ray2D(this.transform.position, dir);
-            RaycastHit2D scan = Physics2D.Raycast(transform.position, dir);
+            //Ray2D hitScan = new Ray2D(, dir);
+
+            //print(transform.position.ToString() + " : " + new Ray2D(transform.position, dir).GetPoint(10.0f).ToString());
+            RaycastHit2D scan = Physics2D.Raycast(GetComponentInChildren<Transform>().position, mousePos - GetComponentInChildren<Transform>().position);
             if (scan != null)
             {
-                GameObject.Destroy(scan.collider.gameObject);
+                print(scan.collider.gameObject.name);
+                if (scan.collider.gameObject.tag == "Enemy")
+                    GameObject.Destroy(scan.collider.gameObject);
             }
-            Debug.DrawRay(transform.position, relMouseNorm, Color.red, 10.0f, true);
+            Debug.DrawRay(GetComponentInChildren<Transform>().position, mousePos - GetComponentInChildren<Transform>().position, Color.red, 10.0f, true);
 
         }
     }
