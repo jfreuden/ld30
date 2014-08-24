@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour
 		void Start ()
 		{
 				mirror = false;
+
 		}
 
 		void Update ()
