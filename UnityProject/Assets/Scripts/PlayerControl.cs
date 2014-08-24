@@ -10,7 +10,7 @@ public class PlayerControl : MonoBehaviour
 
 
     public bool running = false;
-    int moveSpeed = 4;
+    int moveSpeed = 40;
     public bool mirror;
     public AudioClip jumpSound1;
     public AudioClip jumpSound2;
@@ -116,8 +116,21 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rigidbody2D.AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+                switch (Random.Range(0, 2))
+                {
+                    case 0:
+                        audio.clip = jumpSound1;
+                        break;
+                    case 1:
+                        audio.clip = jumpSound2;
+                        break;
+                    case 2:
+                        audio.clip = jumpSound3;
+                        break;
+                }
 
 
+                audio.Play();
             }
         } else if (rigidbody2D.velocity.y > 0)
         {
@@ -130,8 +143,8 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-    void OnGui()
+    void OnGUI()
     {
-    rigidbody2D.vel
+        GUI.Label(new Rect(25, 25, 100, 30), "Label");
     }
 }
