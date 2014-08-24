@@ -4,17 +4,20 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
 
-		Bounds levelBounds;
-
+	public Bounds levelBounds;
+	void Start()
+	{
+		levelBounds = GameObject.Find ("dev").renderer.bounds;
+		Renderer[] renderers = GameObject.Find ("dev").GetComponentsInChildren<Renderer> ();
+		
+		foreach (var render in renderers) {
+			if (render != renderer)
+				levelBounds.Encapsulate (render.bounds);
+		}
+	}
 		void Update ()
 		{
-				levelBounds = GameObject.Find ("dev").renderer.bounds;
-				Renderer[] renderers = GameObject.Find ("dev").GetComponentsInChildren<Renderer> ();
-		
-				foreach (var render in renderers) {
-						if (render != renderer)
-								levelBounds.Encapsulate (render.bounds);
-				}
+				
 
 				float minCamX = camera.ViewportToWorldPoint (Vector3.zero).x;
 				float maxCamX = camera.ViewportToWorldPoint (Vector3.one).x;
