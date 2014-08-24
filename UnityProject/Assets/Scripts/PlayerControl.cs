@@ -4,13 +4,8 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour
 {
 
-
-
-
-
-
     public bool running = false;
-    int moveSpeed = 40;
+    int moveSpeed = 8;
     public bool mirror;
     public AudioClip jumpSound1;
     public AudioClip jumpSound2;
@@ -145,6 +140,6 @@ public class PlayerControl : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(25, 25, 100, 30), "Label");
+        GUI.Label(new Rect(25, 25, 100, 30), "Bullets left:");
     }
 }

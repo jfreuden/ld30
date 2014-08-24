@@ -22,8 +22,17 @@ public class GunControl : MonoBehaviour
         rotateToMouse = Quaternion.FromToRotation(Vector3.right, relMouseNorm);
         transform.rotation = rotateToMouse;
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0)) //Shoot
         {
+
+            Vector3 dir = relMouseNorm;
+            Ray2D hitScan = new Ray2D(this.transform.position, dir);
+            RaycastHit2D scan = Physics2D.Raycast(transform.position, dir);
+            if (scan != null)
+            {
+                GameObject.Destroy(scan.collider.gameObject);
+            }
+            Debug.DrawRay(transform.position, relMouseNorm, Color.red, 10.0f, true);
 
         }
     }
