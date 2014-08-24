@@ -4,18 +4,19 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
 
-	public Bounds levelBounds;
-	void Start()
-	{
-		new WaitForSeconds (1);
-		levelBounds = GameObject.FindGameObjectWithTag("Level").renderer.bounds;
-		Renderer[] renderers = GameObject.FindGameObjectWithTag("Level").GetComponentsInChildren<Renderer> ();
+		public Bounds levelBounds;
+		void Start ()
+		{
+				
+				levelBounds = GameObject.FindGameObjectWithTag ("Level").renderer.bounds;
+				Renderer[] renderers = GameObject.FindGameObjectWithTag ("Level").GetComponentsInChildren<Renderer> ();
 		
-		foreach (var render in renderers) {
-			if (render != renderer)
-				levelBounds.Encapsulate (render.bounds);
+				foreach (var render in renderers) {
+						if (render != renderer)
+								levelBounds.Encapsulate (render.bounds);
+				}
+				print (GameObject.FindGameObjectWithTag ("Level").name);
 		}
-	}
 		void Update ()
 		{
 				
