@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-up" width="80" height="16" tilewidth="16" tileheight="16">
+<map version="1.0" orientation="orthogonal" renderorder="right-up" width="120" height="16" tilewidth="16" tileheight="16">
  <properties>
   <property name="unity:scale" value=".0625"/>
  </properties>
@@ -24,15 +24,27 @@
  <tileset firstgid="33" name="Wall" tilewidth="32" tileheight="64">
   <image source="WallTileset.png" width="128" height="64"/>
  </tileset>
- <layer name="Wall" width="80" height="16">
+ <tileset firstgid="37" name="SkyTiles" tilewidth="16" tileheight="60">
+  <image source="SkyTiles.png" width="192" height="120"/>
+ </tileset>
+ <layer name="Sky" width="120" height="16">
   <data encoding="base64" compression="zlib">
-   eJzt0MEJACAMBMHUovZfoxWIQkSIzHzue2wEAABwqhfdETnt0o/qdj1XnbL9f6UTwBsTvqwFwQ==
+   eJzt1MEJgFAMRMEPXmzEDuy/NhsQDARZIzPw7oGFrAVMdejXAXOl/4f8WuDeqTEBULcXS91AT3XfVPRsH4+e9H72fVd6v6cuX5g5vA==
   </data>
  </layer>
- <layer name="Terrain Tiles" width="80" height="16">
+ <layer name="Wall" width="120" height="16">
   <data encoding="base64" compression="zlib">
-   eJzt0EsKACAIAFH73P/MrdqWIhrGPJitpSIAAAAAkKMZ64esszQzb3l43t3N4mlvGrX7KJ72pj/unnnT138iimgBnDoFSw==
+   eJzt08EJACAMBLC6irr/jE4gKoogJlDuW7g2AgAAAOBt5dGssSdf2vN0/mbUd6/HmftIE8Ndp/8cAGBVA5z5B7Q=
   </data>
  </layer>
- <objectgroup name="hidden"/>
+ <layer name="Terrain Tiles" width="120" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztlOEKgjAURm9WVhAI0o+03v85SzAYsua96tz94DtwcIyxDQ8qQgjxQD/aBeN+Zp7g8DL4HJ8Eh1bSTd+ROYLDQ+L/5ZQEh+H7vX29GyQ4DH0bsTUmOPz6WhoTHMK+2sYEh2lfTeOD0SqhdS/NnnOuYel9l3j5Yx2Mzxk8gattHlu3xflarhlNcQRX2zy2bovzvVO6z17Nc53lndIt0PVO6feDrnc+uuIPKw==
+  </data>
+ </layer>
+ <layer name="Special" width="120" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztw6ENAAAIA7AdxP/3YSeRiDZpAgAAAAC/TAUAAO4W72sAhQ==
+  </data>
+ </layer>
 </map>
