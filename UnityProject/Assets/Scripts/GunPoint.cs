@@ -3,14 +3,6 @@ using System.Collections;
 
 public class GunPoint : MonoBehaviour
 {
-
-		// Use this for initialization
-		void Start ()
-		{
-			
-		}
-
-		// Update is called once per frame
 		void Update ()
 		{
 				PlayerControl playerScript = ScriptableObject.FindObjectOfType<PlayerControl> ();
@@ -24,9 +16,6 @@ public class GunPoint : MonoBehaviour
 						relMouseNorm.x *= -1;
 				} 
 				
-				GameObject player = GameObject.Find ("Player");
-				Vector3 relPlayer = player.transform.position - transform.position;
-				Vector3 relPlayerNorm = relPlayer.normalized;
 				Quaternion rotateToMouse;
 				rotateToMouse = Quaternion.FromToRotation (Vector3.right, relMouseNorm);
 				
