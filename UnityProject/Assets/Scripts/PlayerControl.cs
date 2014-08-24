@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour
 {
 		public bool running = false;
-		public int moveSpeed = 4;
+		public int moveSpeed = 16;
 		public bool mirror;
 		// Use this for initialization
 		void Start ()
