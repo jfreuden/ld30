@@ -7,8 +7,9 @@ public class CameraControl : MonoBehaviour
 	public Bounds levelBounds;
 	void Start()
 	{
-		levelBounds = GameObject.Find ("dev").renderer.bounds;
-		Renderer[] renderers = GameObject.Find ("dev").GetComponentsInChildren<Renderer> ();
+		new WaitForSeconds (1);
+		levelBounds = GameObject.FindGameObjectWithTag("Level").renderer.bounds;
+		Renderer[] renderers = GameObject.FindGameObjectWithTag("Level").GetComponentsInChildren<Renderer> ();
 		
 		foreach (var render in renderers) {
 			if (render != renderer)

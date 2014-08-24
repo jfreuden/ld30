@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Level
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -37,13 +38,13 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: Default
-    userID: 0
-    uniqueID: 0
+  - name: Terrain
+    userID: 5
+    uniqueID: 1801420953
     locked: 0
-  - name: inFrontPlayer
-    userID: 4
-    uniqueID: 3153798443
+  - name: behindPlayer
+    userID: 3
+    uniqueID: 2102233011
     locked: 0
   - name: Player
     userID: 1
@@ -53,7 +54,11 @@ TagManager:
     userID: 2
     uniqueID: 3390649107
     locked: 0
-  - name: behindPlayer
-    userID: 3
-    uniqueID: 2102233011
+  - name: inFrontPlayer
+    userID: 4
+    uniqueID: 3153798443
+    locked: 0
+  - name: Default
+    userID: 0
+    uniqueID: 0
     locked: 0

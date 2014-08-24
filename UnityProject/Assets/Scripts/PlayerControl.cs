@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour
 	void Start ()
 	{
 		mirror = false;
+		new WaitForSeconds (1);
 	}
 	void Update ()
 	{
@@ -45,7 +46,7 @@ public class PlayerControl : MonoBehaviour
 		float clampedX = Mathf.Clamp (transform.position.x, cameraScript.levelBounds.min.x, cameraScript.levelBounds.max.x);
 		transform.position = new Vector3 (clampedX, transform.position.y, transform.position.z);
 				
-		if (rigidbody2D.velocity.y == 0) { //If not jumping (or otherwise moving up/down)
+		if ((rigidbody2D.velocity.y < 0.1f) & (rigidbody2D.velocity.y > -0.1f)) { //If not jumping (or otherwise moving up/down)
 			stateAnim.SetBool ("jumping", false);
 			stateAnim.SetBool ("falling", false);
 			if (Input.GetKeyDown (KeyCode.Space)) {

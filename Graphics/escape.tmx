@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Tileset" tilewidth="16" tileheight="16">
+  <image source="Tileset.png" width="64" height="128"/>
+  <tile id="5">
+   <objectgroup draworder="index">
+    <object x="-0.123288" y="-8.88178e-16" width="16.1507" height="15.9041"/>
+   </objectgroup>
+  </tile>
+  <tile id="6">
+   <objectgroup draworder="index">
+    <object x="0.123288" y="0.123288" width="15.6576" height="15.5343"/>
+   </objectgroup>
+  </tile>
+  <tile id="7">
+   <objectgroup draworder="index">
+    <object x="0.246576" y="0.369864" width="15.411" height="15.5343"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1VEOgjAQQEEiKN7/xHyZNKR1EduKMJO8C+xuYRgAAACAlzmptTHp6uZCqeeq2nrt4/5BPURz36r2fs7+PrbcfE3f7qX1Pn557z2+9yV7d3JL+hdHmvs7j6ApqKU97+RoN1/bGBTtM1dpZrnW/75cZ5w7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBVLFrgAyc=
+  </data>
+ </layer>
+ <objectgroup name="thing">
+  <object name="Warp" x="1553.17" y="146.623" width="45.5848" height="60.6231"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Tileset" tilewidth="16" tileheight="16">
+  <image source="Tileset.png" width="64" height="128"/>
+  <tile id="4">
+   <objectgroup draworder="index">
+    <object x="0" y="0.246576" width="16.1507" height="15.7808"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2cFKw0AARdGAuNBqVdwI9v+/085CGMK0nWiTvJBz4IEoQpjrSKuHYRgOnXuz2dfbQg899jg9sqZH1vTImh5Z0yNremRNj6zpkTU9sqZH1vTImh5Z0yNrjxO29rPuYd+d+wh41j2snPWpOvf643qfAc+6h7kfWbt0/uN7osf/9nTeS8fcj6wmemQ10WP5PVyZHnrsfXpkTY+s3epx6T25Huv0cD/6N+Xvr3+ZHtNazE2PnBbFPXu03ns+d3xf+pZqUdz7ftRNSout/19xyRbFtQb16666x+t5742Nv3Yctt1j6RZFq8NX43O/PcYt6udvdToOy5/j1DO/tDVM+X3VOu+1z3NrP/+3zP16OnkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABb9ANmW9EL
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object name="Warp" x="1488.55" y="370.37" width="109.521" height="91.2677"/>
+ </objectgroup>
+</map>

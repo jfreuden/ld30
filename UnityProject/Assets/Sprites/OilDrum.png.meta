@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 22c3fd530c260ac439291fe21327e590
+guid: 9ec99755094b9487d8a0b245d717d29f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WeaponsSpritesheet
-    21300002: Rifle
-    21300004: Sidearm
-    21300006: RIfleFire
-    21300008: SIdearm
-    21300010: SIdearmFire
+    21300000: OilDrum
+    21300002: OilDrum_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,45 +45,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Rifle
+    - name: OilDrum_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 8
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RIfleFire
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 8
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SIdearm
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 16
-        height: 8
+        width: 12
+        height: 17
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SIdearmFire
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

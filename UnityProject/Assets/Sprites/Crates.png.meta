@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 22c3fd530c260ac439291fe21327e590
+guid: 1ea6541cf7e6f460e8a8fa0fd5e88ab5
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WeaponsSpritesheet
-    21300002: Rifle
-    21300004: Sidearm
-    21300006: RIfleFire
-    21300008: SIdearm
-    21300010: SIdearmFire
+    21300000: Crates
+    21300002: Crates_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,45 +45,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Rifle
+    - name: Crates_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 8
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RIfleFire
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 8
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SIdearm
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 16
-        height: 8
+        width: 24
+        height: 22
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: SIdearmFire
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 8
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
