@@ -4,7 +4,7 @@
   <property name="unity:scale" value=".0625"/>
  </properties>
  <tileset firstgid="1" name="Tileset" tilewidth="16" tileheight="16">
-  <image source="Tileset.png" width="64" height="64"/>
+  <image source="Tileset.png" width="64" height="128"/>
   <tile id="0">
    <objectgroup draworder="index">
     <object x="0" y="0" width="16" height="16"/>
@@ -21,12 +21,12 @@
    </objectgroup>
   </tile>
  </tileset>
- <tileset firstgid="17" name="Wall" tilewidth="32" tileheight="64">
+ <tileset firstgid="33" name="Wall" tilewidth="32" tileheight="64">
   <image source="WallTileset.png" width="128" height="64"/>
  </tileset>
  <layer name="Wall" width="80" height="16">
   <data encoding="base64" compression="zlib">
-   eJzt0MEJACAMBMHUoPZfqxWIQkSIzHzue2wEAABwqhfdETnt0o/qdj1XnbL9f6UTwBsTWQADIQ==
+   eJzt0MEJACAMBMHUovZfoxWIQkSIzHzue2wEAABwqhfdETnt0o/qdj1XnbL9f6UTwBsTvqwFwQ==
   </data>
  </layer>
  <layer name="Terrain Tiles" width="80" height="16">
