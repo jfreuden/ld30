@@ -137,9 +137,4 @@ public class PlayerControl : MonoBehaviour
             stateAnim.SetBool("jumping", false);
         }
     }
-
-    void OnGUI()
-    {
-        GUI.Label(new Rect(25, 25, 100, 30), "Bullets left:");
-    }
 }
