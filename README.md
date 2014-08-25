@@ -1,0 +1,1 @@
+Ludum Dare repository. I retain all rights to the code, except where explicitly stated otherwise, or concerning modifications to included open source libraries.
